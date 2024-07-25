@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Atractores</string>
+    <string name="realizar_levantamiento">Realizar levantamiento</string>
+    <string name="modificar_levantamiento">Modificar levantamiento</string>
+    <string name="subir_levantamiento">Subir levantamiento</string>
+</resources>
