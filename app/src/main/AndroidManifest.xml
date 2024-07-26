@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Atractores"
         tools:targetApi="31">
         <activity
+            android:name=".AtractoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_atractor"
+            android:exported="false"
+            android:theme="@style/Theme.Atractores" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

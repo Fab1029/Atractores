@@ -3,4 +3,9 @@
     <string name="realizar_levantamiento">Realizar levantamiento</string>
     <string name="modificar_levantamiento">Modificar levantamiento</string>
     <string name="subir_levantamiento">Subir levantamiento</string>
+    <string name="fecha_levantamiento">Fecha levantamiento:</string>
+    <string name="latitud_levantamiento">Latitud levantamiento:</string>
+    <string name="longitud_levantamiento">Longitud levantamiento:</string>
+    <string name="calle_levantamiento">Calle:</string>
+    <string name="agregar_levantamiento">Agregar levantamiento</string>
 </resources>
