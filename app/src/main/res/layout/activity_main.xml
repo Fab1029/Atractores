@@ -7,25 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/componente"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toTopOf="@id/cvRealizarLevantamiento"
-        app:layout_constraintEnd_toEndOf="parent"
+    <RelativeLayout
+        android:id="@+id/rlUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/semicircle_shape"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icono_usuario" />
+
+        <TextView
+            android:id="@+id/txtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="2345MFSD"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvRealizarLevantamiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginVertical="50dp"
         android:backgroundTint="@color/componente"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@id/cvModificarLevantamiento"
+        app:layout_constraintTop_toBottomOf="@id/rlUsuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -34,7 +55,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -59,10 +80,12 @@
         android:id="@+id/cvModificarLevantamiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginVertical="30dp"
         android:backgroundTint="@color/componente"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@id/cvSubirLevantamiento"
+        app:layout_constraintTop_toBottomOf="@id/cvRealizarLevantamiento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" >
 
@@ -71,7 +94,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -97,10 +120,12 @@
         android:id="@+id/cvSubirLevantamiento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginVertical="30dp"
         android:backgroundTint="@color/componente"
         app:cardCornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvModificarLevantamiento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" >
         <LinearLayout
@@ -108,7 +133,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="30dp">
 
             <ImageView
                 android:layout_width="wrap_content"
