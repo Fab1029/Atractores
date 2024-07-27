@@ -31,7 +31,7 @@
             android:layout_below="@id/icUsuario"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:hint="2345MFSD"
+            tools:text="2345MFSD"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>

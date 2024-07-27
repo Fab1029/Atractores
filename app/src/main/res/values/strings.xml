@@ -8,4 +8,5 @@
     <string name="longitud_levantamiento">Longitud levantamiento:</string>
     <string name="calle_levantamiento">Calle:</string>
     <string name="agregar_levantamiento">Agregar levantamiento</string>
+    <string name="levantamiento">Levantamiento</string>
 </resources>
