@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTipoAtractor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblTipoAtractor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:text="Escuela/Colegio" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAgregarTipoAtractor"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="@color/botonPrincipal"
+                android:contentDescription="@string/agregar"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="50dp"
+                app:icon="@drawable/ic_agregar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnModificarTipoAtractor"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/botonSecundario"
+                android:contentDescription="@string/modificar"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="50dp"
+                app:icon="@drawable/ic_modificar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEliminarTipoAtractor"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/botonError"
+                android:contentDescription="@string/eliminar"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="50dp"
+                app:icon="@drawable/ic_eliminar" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRegistroAtractores"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/cvTipoAtractor"
+        android:orientation="horizontal"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

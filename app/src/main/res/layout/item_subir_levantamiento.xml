@@ -57,35 +57,19 @@
                 tools:text="12-5-2024" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnModificarLevantamiento"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="50dp"
-                android:layout_height="55dp"
-                android:layout_marginStart="100dp"
+                android:id="@+id/btnSubirLevantamiento"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="10dp"
-                android:backgroundTint="@color/botonSecundario"
-                android:contentDescription="@string/modificar_levantamiento"
-                app:backgroundTint="@color/white"
+                android:contentDescription="@string/subir_levantamiento"
+                app:backgroundTint="@color/botonPrincipal"
                 app:cornerRadius="50dp"
-                app:icon="@drawable/ic_modificar"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/lblFecha" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnEliminarLevantamiento"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_width="50dp"
-                android:layout_height="55dp"
-                android:backgroundTint="@color/botonError"
-                android:contentDescription="@string/eliminar_levantamiento"
-                app:backgroundTint="@color/white"
-                app:cornerRadius="50dp"
-                app:icon="@drawable/ic_eliminar"
+                app:icon="@drawable/ic_subir"
+                app:iconGravity="textStart"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btnModificarLevantamiento" />
-
+                app:layout_constraintStart_toEndOf="@id/lblFecha"
+                app:layout_constraintTop_toBottomOf="@id/lblFechaLevantamiento" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Atractores"
         tools:targetApi="31">
         <activity
+            android:name=".TipoAtractoresActivity"
+            android:exported="false" />
+        <activity
             android:name=".SubirLevantamientoActivity"
             android:exported="false" />
         <activity
