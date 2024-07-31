@@ -1,16 +1,15 @@
-package com.example.atractores
+package com.example.atractores.Atractor
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.atractores.R
 
-class ModificarLevantamientoActivity : AppCompatActivity() {
+class AtractoresActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_modificar_levantamiento)
+        setContentView(R.layout.activity_atractores)
 
     }
 }

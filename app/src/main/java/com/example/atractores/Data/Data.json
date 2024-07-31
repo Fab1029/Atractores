@@ -1,0 +1,11 @@
+{
+  "Atractores": {
+    "Educacion": ["Esculea", "universidad"],
+    "Recreacion": ["Bar", "restaurante"]
+  },
+  "Informacion": {
+    "TamanoAtractor": ["grande", "mediano"],
+    "Atencion": ["lunes, martes, miercoles"],
+    "Horario": ["matutino", "todo el dia"]
+  }
+}

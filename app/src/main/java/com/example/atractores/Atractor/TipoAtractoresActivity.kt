@@ -1,10 +1,11 @@
-package com.example.atractores
+package com.example.atractores.Atractor
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.atractores.R
 
 class TipoAtractoresActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
